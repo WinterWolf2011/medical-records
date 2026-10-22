@@ -1,0 +1,78 @@
+nav{
+    margin: 10px;
+    padding: 2px;
+}
+nav a {
+    font-size: 180%;
+    font-weight: bolder;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#btp{
+    background-color: oklch(74.6% 0.16 232.661);
+    padding: 0.6rem;
+    max-width: 10rem;
+    max-height: 4rem;
+    border-radius: 5px;
+}
+
+.main{
+    padding: 20px;
+    max-width: 90%;
+    max-height: 90%;
+    margin: 40px auto;
+}
+.form-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.form-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#address{
+    width: 98%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#btp{
+    display: flex;
+}
+img{
+    width: 20px;
+    height: 15px;
+}
+
+.form-action{
+    display: flex;
+    justify-content: space-between;
+}
+.form-action .reset{
+    background-color: oklch(71.2% 0.194 13.428);
+    border-radius: 2px;
+    border: none;
+    height: 2rem;
+    width: 7rem;
+    margin: 6px;
+    border-radius: 3px;
+}
+.form-action .submit{
+    background-color: oklch(74.6% 0.16 232.661);
+    border-radius: 2px;
+    border: none;
+    height: 2rem;
+    width: 7rem;
+    margin: 6px;
+    border-radius: 3px;
+}

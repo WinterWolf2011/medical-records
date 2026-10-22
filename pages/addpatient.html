@@ -1,0 +1,77 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add Patient</title>
+        <link rel="stylesheet" href="../styles/addpatientstyle.css">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Medical Records</a>
+        </nav>
+        <div class="main">
+            <a href="index.html" id="btp"><img src="../images/arrow.svg" alt=""> Back to patients</a>
+            <p>Tambah pasien baru <br> Daftarkan Pasien Baru ke sistem </p>
+            <form action="" id="datapasien">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap</label><br>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dob">Tanggal Lahir</label><br>
+                        <input type="date" name="dob" id="dob" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jk">Jenis Kelamin</label><br>
+                        <select name="jk" id="jk" required>
+                            <option value="">select</option>
+                            <option value="Lelaki">lelaki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nomor">Nomor Telpon</label><br>
+                        <input type="tel" id="nomor" name="nomor" required>
+                    </div>
+
+                </div>
+
+                <div class="form-flex">
+
+                    <div class="form-fw">
+                        <label for="email">Email Address(optional)</label><br>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="form-fw">
+                        <label for="address">Alamat Rumah</label><br>
+                        <input type="text" name="address" id="address" Required="Required">
+                    </div>
+
+                    <div class="form-fw">
+                        <label for="patientid">Nomor Pasien(auto): A</label><br>
+                        <input type="text" name="patientid" id="patientid" readonly>
+                    </div>
+
+                    <div class="form-fw">
+                        <label for="pfp">Profile Picture(optional)</label><br>
+                        <input type="file" name="pfp" id="pfp" accept=".jpg,.jpeg,.png">
+                    </div>
+
+                </div>
+
+                <div class="form-action">
+                    <button type="reset" class="reset">Reset</button>
+                    <button type="submit" class="submit">submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+    </html>
